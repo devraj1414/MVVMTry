@@ -20,7 +20,7 @@ extension Album : Equatable{
 }
 extension Album : CustomStringConvertible{
     var description: String{
-        return ("\(title) Artist = \(artist) ThumbNail = \(thumbnail_image)")
+        return ("Title = \(title) Artist  = \(artist) ThumbNail = \(thumbnail_image)")
     }
 }
 
