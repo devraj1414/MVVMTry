@@ -18,6 +18,11 @@ extension Album : Equatable{
         return lhs.title == rhs.title && lhs.artist == rhs.artist && lhs.thumbnail_image == rhs.thumbnail_image
     }
 }
+extension Album : CustomStringConvertible{
+    var description: String{
+        return ("\(title) Artist = \(artist) ThumbNail = \(thumbnail_image)")
+    }
+}
 
 class AlbumsViewModel{
     
