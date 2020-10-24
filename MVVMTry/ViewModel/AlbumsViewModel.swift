@@ -8,11 +8,15 @@
 
 import Foundation
 
-struct Album : Decodable {
+struct Album : Decodable  {
     let title : String
     let artist : String
-    let url : String
     let thumbnail_image : String
+}
+extension Album : Equatable{
+    static func ==(lhs : Album, rhs : Album)->Bool{
+        return lhs.title == rhs.title && lhs.artist == rhs.artist && lhs.thumbnail_image == rhs.thumbnail_image
+    }
 }
 
 class AlbumsViewModel{
