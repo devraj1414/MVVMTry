@@ -42,6 +42,13 @@ class MVVMTryTests: XCTestCase {
         
         XCTAssertEqual(album1, album2)
     }
+    
+    func testMyTestableFunc(){
+           let album1 = Album(title: "Apple", artist: "India", thumbnail_image: "apple_India")
+           let album2 = Album(title: "Apple", artist: "India", thumbnail_image: "apple_India")
+           
+           XCTAssertEqual(album1, album2)
+       }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
